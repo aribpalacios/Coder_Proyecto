@@ -1,0 +1,45 @@
+.altura{
+  padding: 100px 0 20px;
+  
+}
+.bottom{
+  padding-bottom: 100px;
+}
+
+// texto
+.titulo{
+  color: $color-azul;
+  font-size: 4.2rem;
+  font-family: $font-titulo;
+  font-weight: bold;
+}
+
+p{
+  font-size: 1.7rem;
+  font-family: $font-parrafo;
+}
+.foto_perfil{
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px 4px rgba(118,118,118,0.88);
+-webkit-box-shadow: 1px 3px 5px 4px rgba(118,118,118,0.88);
+-moz-box-shadow: 1px 3px 5px 4px rgba(118,118,118,0.88);
+}
+// 
+// follow insta
+.img_follow{
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 8px 5px 0px rgba(166,162,162,0.53);
+-webkit-box-shadow: 5px 8px 5px 0px rgba(166,162,162,0.53);
+-moz-box-shadow: 5px 8px 5px 0px rgba(166,162,162,0.53);
+
+}
+.img_follow:hover{
+opacity: 80%;
+transition: .7s;
+
+}

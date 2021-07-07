@@ -1,0 +1,99 @@
+// principal
+.principal_titulo{
+  @include item-titulo;
+  margin-bottom: 10px;
+  font-size: 5rem;
+}
+.principal_subtitulo{
+  @include item-subtitulo;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.secundario_titulo_2{
+  @include item-subtitulo;
+  margin-bottom: 5px;  
+  font-size: 2.4rem;
+}
+.secundario_subtitulo_2{
+  @include item-subtitulo;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+.texto_seccion{
+  font-size: 1.4rem;
+}
+
+/* SECCION */
+
+
+.secundario-seccion{
+  margin-bottom: 45px ;
+}
+
+.publicacion1{
+  padding-bottom: 55px;
+}
+.publicacion2{
+  padding-bottom: 45px;
+  
+}
+
+.principal_texto{
+  margin: 15px;
+}
+.seccion_texto_2{
+  margin: 10px;
+}
+
+.principal_foto{
+  @include principal-foto;
+}
+
+
+.principal_foto_2{
+  @include principal-foto
+}
+
+
+
+.foto_der_1{
+  @include secundario-foto;
+}
+.foto_der_2{
+  @include secundario-foto;
+}
+.foto_der_3{
+  @include secundario-foto;
+}
+
+/* btn seguir leyendo */
+.btn-primary{
+  height: 40px;
+  width: 140px;
+  border-radius: 5px !important;
+  
+}
+.seguir_leyendo{
+  font-size: 1.3rem;
+  font-weight: 450;
+  margin: auto;
+}
+.btn-secondary{
+  height: 35px;
+  width: 120px;
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  border-radius: 5px !important;
+}
+.seguir_leyendo_2{
+  font-size: 1.2rem;
+  font-weight: 450;
+  margin: auto;
+}
+.seguir_leyendo_3{
+  font-size: 1.3rem;
+  font-weight: 450;
+  margin: auto;
+}
+/* FIN DE SECCIONES */
+

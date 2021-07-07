@@ -1,0 +1,238 @@
+.footer{
+  background-color: $color-bg-footer; 
+}
+.texto_footer{
+  text-align: center;
+  padding-bottom: 1px;
+}
+.legales_footer{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.mi_instagram{
+  padding: 90px;
+}
+.texto_insta{
+  @include base;
+  margin-bottom: 25px
+
+}
+
+
+.redes{
+  padding: 80px;
+}
+
+.suscribete{
+  font-size: 1.7rem;
+  font-family: $font-titulo;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 400px;
+}
+.texto_suscribete{
+  @include base;
+  padding: 50px 0 20px;
+}
+
+.input-email{
+  width: 100%;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.btn-suscribete{
+  width: 35%;
+  font-size: 1.4rem;
+  padding: 7px 0;
+  font-weight: bold;
+  background-color:$color-azul;
+  color: white; 
+  border-radius: 5px;
+}
+::placeholder{
+  font-size: 1.5rem;
+  font-family: $font-parrafo;
+  padding-left: 2px;
+  
+}
+.campana{
+  font-size: 12px;
+}
+
+.btn-volver{
+  display: flex;
+  width: 15%;
+  font-size: 1.4rem;
+  padding: 7px 0;
+  font-weight: bold;
+  background-color: $color-celeste;
+  border-color: $color-celeste;
+  color: white; 
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-arriba{
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+// iconos transicion
+
+
+
+.middle{
+  text-align: center;
+  padding: 0px 0 20px;
+}
+
+// insta
+.boton_insta{
+  @include btn-redes;
+  color:#833ab4;
+}
+.boton_insta i{
+  line-height: 67px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.boton_insta:hover i{
+  transform: scale(1.3);
+  color: white;
+}
+
+.boton_insta::before{
+  @include btn-redes-before();
+  background:$color-btn-insta;
+}
+.boton_insta:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+// 
+
+// facebook 
+.boton_face{
+  @include btn-redes;
+  color:$color-btn-face;
+}
+.boton_face i{
+  line-height: 67px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.boton_face:hover i{
+  transform: scale(1.3);
+  color: white;
+}
+
+.boton_face::before{
+  @include btn-redes-before();
+  background:$color-btn-face;
+}
+.boton_face:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+// 
+
+// twitter
+.boton_tw{
+  @include btn-redes;
+  color:#36D8FF;
+}
+.boton_tw i{
+  line-height: 67px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.boton_tw:hover i{
+  transform: scale(1.3);
+  color: white;
+}
+
+.boton_tw::before{
+  @include btn-redes-before();
+  background:$color-btn-tw;
+}
+.boton_tw:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+// 
+
+// youtube
+.boton_yt{
+  @include btn-redes;
+  color:$color-btn-yt;
+}
+.boton_yt i{
+  line-height: 67px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.boton_yt:hover i{
+  transform: scale(1.3);
+  color: white;
+}
+
+.boton_yt::before{
+  @include btn-redes-before();
+  background:#ff0000;
+}
+.boton_yt:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+// 
+// linkedin
+
+.boton_lk{
+  @include btn-redes;
+  color:$color-btn-lk;
+}
+.boton_lk i{
+  line-height: 67px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.boton_lk:hover i{
+  transform: scale(1.3);
+  color: white;
+}
+
+.boton_lk::before{
+  @include btn-redes-before();
+  background:#0077b5;
+}
+.boton_lk:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+// 
+
+@keyframes aaa {
+  0%{
+  left: -110%;
+  top: 90%;
+
+  }50%{
+  left: 10%;
+  top: -30%;
+
+
+  }100%{
+  top: -10%;
+  left: -10%;
+  }
+}

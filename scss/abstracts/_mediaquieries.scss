@@ -1,0 +1,72 @@
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+    height:100%;
+	}
+	.left{
+		height: 250px;
+	}
+  .contactame-texto{
+    margin-bottom: 25px;
+  }
+  .foto_perfil{
+    height: 450px;
+  }
+  .input-email{
+    width: 60%;
+  }
+  .btn-suscribete{
+    width: 20%;
+  }
+  .foto_perfil{
+    height: 600px;
+  }
+}
+  @media screen and (max-width: 768px){
+    #menu-index{
+      li {
+        a{
+          
+          &:hover::after{
+            width: 0%;
+          }
+          
+                }
+              }
+    }
+    #menu{
+      li {
+        a{
+          
+          &:hover::after{
+            width: 0%;
+          }
+          
+                }
+              }
+    }
+  
+  }
+
+@media screen and (max-width: 450px){
+  .foto_perfil{
+    height: 350px;
+  }
+  
+}
+
+@media screen and (max-width: 415px){
+  .image__overlay{
+    position: absolute;
+    top: -40px;
+    left: 1;
+    padding-left: 25px ;
+    padding-right: 35px;
+    opacity: 100%;
+    transition: 1.4s;  
+    border-radius: 10px;
+    width: 93%;
+    height: 100%;
+  }
+}

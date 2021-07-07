@@ -1,0 +1,231 @@
+.bg__nav{
+  background-color: $color-bg; 
+  box-shadow: -1px 5px 5px 0px rgba(174,174,174,0.37);
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(174,174,174,0.37);
+  -moz-box-shadow: -1px 5px 5px 0px rgba(174,174,174,0.37);
+  width: 100%;
+  
+  text-align: left;
+  
+}
+#menu {
+  li {
+    a{
+      position: relative;
+      color:$color-gris;
+      padding: 20px;
+      font-size: 1.7rem;
+      transition-duration: 0.7s ;
+      font-family: 'DM Sans', sans-serif;
+      letter-spacing: 0.5px;
+      &::after{
+        content: "";
+        position: absolute;
+        background-color:  $color-azul;
+        border-radius: 20px;
+        height: 3px;
+        width: 0%;
+        left: 15px;
+        top: 3em;
+        transition: .6s;
+        opacity: 75%;
+      }
+      &:hover::after{
+        width: 75%;
+      }
+      &:hover{
+               color:$color-azul;
+             }
+            }
+          }
+  }
+  #menu-index{
+    li {
+      a{
+        position: relative;
+        color:$color-gris;
+        padding: 20px;
+        font-size: 1.7rem;
+        transition-duration: 0.7s ;
+        font-family: 'DM Sans', sans-serif;
+        letter-spacing: 0.5px;
+        &::after{
+          content: "";
+          position: absolute;
+          background-color:  $color-lightgris;
+          border-radius: 20px;
+          height: 3px;
+          width: 0%;
+          left: 15px;
+          top: 3em;
+          transition: .6s;
+          opacity: 75%;
+        }
+        &:hover::after{
+          width: 75%;
+        }
+        &:hover{
+                 color:$color-lightgris
+               }
+              }
+            }
+  }
+
+
+.breadcrumbs{
+  display: flex;  
+    font-size: 4.1rem;
+    list-style: none;
+    
+    & li a {
+      color: $color-gris;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        background-color:  $color-lightgris;
+        border-radius: 20px;
+        height: 3px;
+        width: 0%;
+        left: 0px;
+        top: 1.5em;
+        transition: .6s;
+        opacity: 75%;
+      }
+      &:hover::after{
+        width: 100%;
+      }
+      &:hover{
+        color:$color-lightgris;
+        text-decoration: none;
+        transition: .6s;
+      }      
+    }
+
+
+  
+}
+.breadcrumbs__link:not(:last-of-type)::after{
+  content: '/';
+  color: $color-gris;
+  padding:8px ;
+}
+
+// burger menu
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+// lineas
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background-color: $color-azul;
+  border-radius: 3px;
+  display: block;
+  transition: all 0.2s;
+}
+// espacio entre las lineas
+
+.middle-bar{
+  margin: 5px auto;
+}
+
+// cuando el burger nav esta abierto
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+
+// cuando el burger nav esta cerrado
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+// color cuando el burgernav esta colapsado
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: $color-azul;
+}
+
+// burger menu index
+// lineas
+.toggler-icon-index{
+  width: 30px;
+  height: 3px;
+  background-color: $color-gris;
+  border-radius: 3px;
+  display: block;
+  transition: all 0.2s;
+}
+// espacio entre las lineas
+
+.middle-bar-index{
+  margin: 5px auto;
+}
+
+// cuando el burger nav esta abierto
+.navbar-toggler .top-bar-index {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar-index {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar-index {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+
+// cuando el burger nav esta cerrado
+.navbar-toggler.collapsed .top-bar-index {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar-index {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar-index {
+  transform: rotate(0);
+}
+
+
+// color cuando el burgernav esta colapsado
+.navbar-toggler.collapsed .toggler-icon-index {
+  background-color: $color-gris;
+}
+
