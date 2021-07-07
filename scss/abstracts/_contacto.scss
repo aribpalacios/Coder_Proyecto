@@ -31,8 +31,10 @@
 }
 .left{
   height: 100%;
-  background: url(/imagenes/contacto.jpg)no-repeat center;
+  background-image: url(../imagenes/contacto.jpg);
   background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contactame-texto{
   font-family: 'Abel', sans-serif;
